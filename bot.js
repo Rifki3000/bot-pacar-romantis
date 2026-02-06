@@ -1,3 +1,17 @@
+// TAMBAHKAN DI BARIS PALING ATAS:
+const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+  res.send('🤖 WhatsApp Bot Aktif!');
+});
+
+app.listen(PORT, () => {
+  console.log(`🌐 Server aktif di port ${PORT}`);
+});
+
+// Kode WhatsApp bot ASLI lanjut di bawah...
 // ============================================
 // 🤖 BOT WHATSAPP AUTO REPLY ROMANTIS
 // 🎯 Khusus untuk Rifky dan Pacarnya
